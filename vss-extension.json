@@ -1,0 +1,45 @@
+{
+    "manifestVersion": 1,
+    "id": "load-azure-credentials-task",
+    "name": "Load Azure Credentials",
+    "version": "0.0.2",
+    "publisher": "DaveBubenik",
+    "public": false,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],     
+    "description": "Simple build/deploy task for loading credentials into the pipeline.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "content": {
+        "details": {
+            "path": "readme.md"
+        },
+        "license": {
+            "path": "license"
+        }
+    },
+    "icons": {
+        "default": "images/icon.png"        
+    },
+    "files": [
+        {
+            "path": "LoadAzureCredentials"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "load-azure-credentials-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "LoadAzureCredentials"
+            }
+        }
+    ]
+}
